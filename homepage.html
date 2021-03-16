@@ -13,9 +13,9 @@
                 <img src="images/logo/Reservia.svg" alt="logo Reservia" id="logo"/>
             <nav>
             <ul class="menu">
-                <li><a href="#Hebergement">Hébergement</a></li>
-                <li><a href="#Activite">Activités</a></li>
-                <li>S'inscrire</li>
+                <li class="onglet"><a href="#Hebergement">Hébergement</a></li>
+                <li class="onglet"><a href="#Activite">Activités</a></li>
+                <li class="onglet">S'inscrire</li>
             </ul>
             </nav>
             </div>
@@ -23,30 +23,33 @@
         
         <section class="section-introduction">
         <div>
-        <div class="titre-page"><h1>
-            Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <p>
-            En plein centre ville ou en pleine nature
-        </p>
-        </div>
-        <div class="recherche">
-            <div class="picto-gris"><i class="fas fa-map-marker-alt"></i></div>
-            <h3>Marseille, France</h3>
-            <p class="button-recherche" alt="Rechercher">Rechercher</p>
-        </div>
-        <div class="filtres">
-            <ul>
-                <li><h3>Filtres</h3></li>
-                <li><div class="tag"><div class="picto-bleu"><i class="fas fa-money-bill-wave"></i></div>Économique</div></li>
-                <li><div class="tag"><div class="picto-bleu"><i class="fas fa-child"></i></div>Familial</div></li>
-                <li><div class="tag"><div class="picto-bleu"><i class="fas fa-heart"></i></div>Romantique</div></li>
-                <li><div class="tag"><div class="picto-bleu"><i class="fas fa-dog"></i></div>Animaux autorisés</div></li>
-            </ul>
-        </div>
-        <div class="infos">
-            <div class="picto-infos"><i class="fas fa-info"></i></div><span>Plus de 500 logements sont disponibles dans cette ville</span>
-        </div>
+            <div class="titre-page">
+            <h1>
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p>
+                En plein centre ville ou en pleine nature
+            </p>
+            </div>
+            <div>
+            <form class="recherche" method="post" action="homepage.html">
+                <div class="picto-gris"><i class="fas fa-map-marker-alt"></i></div>
+                <input class="exemple-recherche" type="search" name="location" id="location" placeholder="Marseille, France" />
+                <input class="button-rechercher" type="submit" value="Rechercher" />
+            </form>
+            </div>
+            <div class="filtres">
+                <ul>
+                    <li><h3>Filtres</h3></li>
+                    <li><div class="tag"><div class="picto-bleu"><i class="fas fa-money-bill-wave"></i></div>Économique</div></li>
+                    <li><div class="tag"><div class="picto-bleu"><i class="fas fa-child"></i></div>Familial</div></li>
+                    <li><div class="tag"><div class="picto-bleu"><i class="fas fa-heart"></i></div>Romantique</div></li>
+                    <li><div class="tag"><div class="picto-bleu"><i class="fas fa-dog"></i></div>Animaux autorisés</div></li>
+                </ul>
+            </div>
+            <div class="infos">
+                <div class="picto-infos"><i class="fas fa-info"></i></div><span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
         </div>
         </section>
 
@@ -54,7 +57,7 @@
         <section class="section-1">
 
             <!-- Bloc Hébergements à Marseille -->
-            <section class="section-hebergement">
+            <section class="section-hebergement" id="Hebergement">
                 
             <!-- Titre -->
             <div class="titre-bloc">
@@ -160,7 +163,7 @@
         </section>
 
         <!-- Section 2 -->
-        <section class="section-2">
+        <section class="section-2" id="Activite">
 
             <!-- Bloc Activités à Marseille -->
             <section class="section-activite">
@@ -173,33 +176,33 @@
             <!-- Bloc -->
             <div class="flexbox-activite">
 
-                <div class="Vieux-port cartouche-activite-grand">
+                <div class="cartouche-activite-grand">
                     <img class="image-activite-grand" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" />
                     <h3 class="descriptif-3">Vieux port</h3>
                 </div>
 
                 <div class="groupe-activite-1">
-                    <div class="Fort-Pomegues cartouche-activite-petit-haut">
+                    <div class="cartouche-activite-petit-haut">
                         <img class="image-activite-petit" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomegues" />
                         <h3 class="descriptif-3">Fort de Pomègues</h3>
                     </div>
-                    <div class="Iles-Frioul cartouche-activite-petit-bas">
+                    <div class="cartouche-activite-petit-bas">
                         <img class="image-activite-petit" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" />
                         <h3 class="descriptif-3">Îles du Frioul</h3>
                     </div>
                 </div>
 
-                <div class="Parc-National cartouche-activite-grand">
+                <div class="cartouche-activite-grand">
                     <img class="image-activite-grand" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" />
                     <h3 class="descriptif-3">Parc National des Calanques</h3>
                 </div>
 
                 <div class="groupe-activite-2">
-                    <div class="Notre-dame cartouche-activite-petit-haut">
+                    <div class="cartouche-activite-petit-haut">
                         <img class="image-activite-petit" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-Garde" />
                         <h3 class="descriptif-3">Notre-dame-de-la-Garde</h3>
                     </div>
-                    <div class="Parc-Longchamp cartouche-activite-petit-bas">
+                    <div class="cartouche-activite-petit-bas">
                         <img class="image-activite-petit" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
                         <h3 class="descriptif-3">Parc Longchamp</h3>
                     </div> 
@@ -208,7 +211,7 @@
             </section>
         </section>
 
-    <footer class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="footer-left">
                 <ul class="bloc-footer">
@@ -233,6 +236,6 @@
                 </ul>
             </div>
         </div>
-    </footer>
+        </footer>
     </body>
 </html>

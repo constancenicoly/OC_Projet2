@@ -33,6 +33,19 @@ nav
     float: right;
 }
 
+.onglet
+{
+    color: black;
+    border: none;
+}
+
+.onglet:focus
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 25px;
+}
+
 /*Body*/
 
 .section-introduction, .section-1, .section-2
@@ -77,6 +90,22 @@ h3
     font-size: 12px;
     font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+input
+{   font-size: 12px;
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.exemple-recherche:active
+{
+    border: 3px solid #0065FC;
 }
 
 a
@@ -171,7 +200,7 @@ li
     color: #0065FC;
     width : 30px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,6 +208,9 @@ li
     margin-right: 8px;
     padding: 2px;
 }
+
+
+
 
 .picto-infos
 {
@@ -228,7 +260,7 @@ li
 .image-activite-petit
 {
     width: 100%;
-    height: 80%;
+    height: 75%;
     border-radius: 25px 25px 0px 0px;
     margin-left: auto;
     margin-right: auto;
@@ -268,7 +300,8 @@ li
 }
 
 /*Bouton recherche*/
-.button-recherche
+
+.button-rechercher
 {
     width : 30%;
     height: 100%;
@@ -278,6 +311,27 @@ li
     border-radius: 0px 15px 15px 0px;
     color: white;
     background-color: #0065FC;
+}
+
+.button-rechercher:active
+{
+    border: 3px solid #0065FC;
+    font-size: 12px;
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #0065fc;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#placeholder
+{
+    font-size: 12px;
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
 }
 
 /*Flexbox filtres*/
@@ -296,6 +350,23 @@ li
     color: black;
     width: auto;
     border: 0.5px solid rgb(216, 216, 216);
+    border-radius: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 12px;
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag:hover
+{
+    color: white;
+    background-color: #0065FC;
+    width: auto;
+    border: 0.5px solid #0065FC;
     border-radius: 25px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -464,6 +535,8 @@ li
     box-shadow: 2px 2px 8px #d8d7d7;
     padding : 2px;
     text-align: justify;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .cartouche-activite-petit-haut
@@ -476,6 +549,8 @@ li
     padding : 2px;
     text-align: justify;
     margin-bottom : 10px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .cartouche-activite-petit-bas
@@ -487,6 +562,8 @@ li
     box-shadow: 2px 2px 8px #d8d7d7;
     padding : 2px;
     text-align: justify;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .descriptif-3
@@ -494,17 +571,14 @@ li
     width: 90%;
     height: auto;
     text-align: justify;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    margin-left: 15px;
 }
 
 /*Footer*/
 
 footer
 {
-    width: 100%;
+    width: auto;
     height: auto;
     margin-top: 80px;
     margin-right: auto;
@@ -514,17 +588,21 @@ footer
     background-color: #d8d7d79a;
     display: block;
     flex-wrap: nowrap;
-    justify-content: space-around;
 }
 
 .container
 {
-    width: 970px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-center, .footer-right
+{
+
 }
 
 .bloc-footer
