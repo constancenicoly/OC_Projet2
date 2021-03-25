@@ -57,7 +57,7 @@
 /*Header*/
 header
 {
-    width:970px;
+    width:1094px;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -84,12 +84,25 @@ nav
     padding-top: 25px;
 }
 
-/*Body*/
+.row
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    --bs-gutter-x: 2px;
+}
 
 .container
 {
-    width: 970px;
-    margin-top: 30px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+/*Body*/
+
+.section-1, .section-2, .section-3
+{
+    width: 1094px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -188,8 +201,8 @@ span
 {
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 25px;
     margin-bottom: 15px;
+    padding-top: 25px;
 }
 
 /*Liste*/
@@ -334,7 +347,7 @@ li
     color: #DEEBFF;
 }
 
-/*Section 1*/ 
+/*Section 1 - Introduction*/ 
 /*Flexbox recherche*/
 .recherche
 {
@@ -425,24 +438,24 @@ li
     align-items: center;
 }
 
-/*Section 2*/
-.section-1
+/*Section 2 - Hebergement + populaire*/
+.section-2
 {
-    height: auto;
+    height: 575px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 30px;
 }
-
 
 /*Flexbox Hébergement à Marseille*/
 .section-hebergement
 {
-    height: 90%;
+    height: 575px;
     justify-content: flex-start;
     background-color:  #d8d7d79a;
     border-radius: 20px;
-    margin-right : 10px;
+    margin-right: 10px;
 }
 
 .flexbox-hebergement
@@ -453,11 +466,13 @@ li
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .cartouche-vertical
 {
-    width: 30%;
+    height: 210px;
     background-color: white ;
     border-radius: 25px;
     box-shadow: 2px 2px 8px #d8d7d7;
@@ -474,65 +489,67 @@ li
     text-align: left;
     margin-left: 10px;
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
 }
 
 /*Flexbox Les + populaires*/
 .section-populaire
 {
-    height: auto;
     background-color: #d8d7d79a;
-    align-content: flex-end;
     justify-content: right;
     border-radius: 20px;
-    margin-left : 10px;
+    margin-left: 10px;
+    height: 575px;
 }
 
 .flexbox-populaire
 {
-    width: 100%;
-    height: 85%;
+    height : 70%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .cartouche-horizontal
 {
-    width: 90%;
-    height: 30%;
+    height: 155px;
     background-color: white ;
     border-radius: 25px;
     box-shadow: 2px 2px 8px #d8d7d7;
     display: flex;
     padding: 2px;
-    margin : 5px;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: justify;
 }
 
 .descriptif-2
 {
     width: 60%;
-    height: 80%;
+    height: auto;
     text-align: left;
-    align-items: stretch;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
-/*Section 2*/
-.section-2
+/*Section 3 - Activite*/
+.section-3
 {
     height: auto;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .section-activite
@@ -546,7 +563,6 @@ li
 {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
     height: 360px;
     justify-content: space-between;
     margin-left: auto;
@@ -555,7 +571,6 @@ li
 
 .groupe-activite-1
 {
-    width: 23%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
@@ -564,17 +579,15 @@ li
 
 .groupe-activite-2
 {
-    width: 23%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
     margin-right: 0px;
 }
 
-.cartouche-activite-grand
+.activite-grand
 {
-    width: 24%;
-    height: 100%;
+    height: 360px;
     background-color: white ;
     border-radius: 25px;
     box-shadow: 2px 2px 8px #d8d7d7;
@@ -584,28 +597,29 @@ li
     flex-wrap: wrap;
 }
 
-.cartouche-activite-petit-haut
+.activite-petit-haut
 {
     width: 100%;
-    height: 48%;
+    height: 175px;
     background-color: white ;
     border-radius: 25px;
     box-shadow: 2px 2px 8px #d8d7d7;
     padding : 2px;
     text-align: justify;
-    margin-bottom : 10px;
+    margin-bottom : 5px;
     display:flex;
     flex-wrap: wrap;
 }
 
-.cartouche-activite-petit-bas
+.activite-petit-bas
 {
     width: 100%;
-    height: 48%;
+    height: 175px;
     background-color: white ;
     border-radius: 25px;
     box-shadow: 2px 2px 8px #d8d7d7;
     padding : 2px;
+    margin-top: 5px;
     text-align: justify;
     display:flex;
     flex-wrap: wrap;
@@ -623,7 +637,7 @@ li
 
 footer
 {
-    width: auto;
+    width: 1094px;
     height: auto;
     margin-top: 80px;
     margin-right: auto;
